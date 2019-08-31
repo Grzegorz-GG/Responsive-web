@@ -391,3 +391,33 @@ ul.social-list li a {
     -ms-border-radius: 40%;
     -o-border-radius: 40%;
 }
+
+/*=================
+Progress - skills
+==================*/
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h4 {
+    line-height: 62px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.progress {
+    height: 25px;
+    background: #dfddddb4;
+}
+
+.progress-bar {
+    background-color: black;
+}
+
+.progress-bar span {
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 25px;
+}
