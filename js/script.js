@@ -19,3 +19,14 @@ $('document').ready(function() {
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
 });
+
+//Progress bar
+
+$(function () {
+        $(".progress-bar").each(function () {
+            $(this).animate({
+                width: $(this).attr("aria-valuenow") + "%"
+            }, 2000);
+        });
+    });
+
