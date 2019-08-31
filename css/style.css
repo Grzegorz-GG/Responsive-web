@@ -252,11 +252,11 @@ section {
     padding: 80px 30px;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
     -webkit-box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -ms-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
 }
 
 .about-item i {
@@ -290,15 +290,104 @@ section {
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
-    transition: translateY 0.5s;
-    -webkit-transition: translateY 0.5s;
-    -moz-transition: translateY 0.5s;
-    -ms-transition: translateY 0.5s;
-    -o-transition: translateY 0.5s;
 }
 
 .about-item:hover i,
 .about-item:hover h3,
 .about-item:hover p {
     color: white;
+}
+
+/*=================
+        Team
+===================*/
+
+#team-left .vertical-heading {
+    min-height: 160px;
+}
+
+#team-left h2 {
+    margin-left: 10px;
+}
+
+.team-member {
+    position: relative;
+    margin: 8px;
+}
+
+.team-member-overlay {
+    background-color: rgb(33, 34, 38, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.team-member-info {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+}
+
+.team-member-info h6 {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.team-member-info p {
+    color: white;
+}
+
+.team-member:hover .team-member-overlay {
+    opacity: 1;
+}
+
+ul.social-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.social-list li a {
+    display: inline-block;
+    border: 1px solid #f4c613;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #f4c613;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+    color: gray;
+    font-size: 40px;
+    background: none;
+    margin: 0;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: #f4c613;
+    border-radius: 40%;
+    color: white;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
 }
