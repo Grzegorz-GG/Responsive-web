@@ -3,7 +3,9 @@ Hexadecimal colors used in the project:
 f4c613-212a-f4f4f4-ffffff-000000
 */
 
-/* General */
+/* ==============
+     GENERAL HTML
+=================*/
 html,
 body {
     height: 100%;
@@ -35,7 +37,9 @@ section {
 }
 
 
-/* HOME */
+/* ==================
+     HOME SECTION
+=====================*/
 
 #home {
     background: none;
@@ -125,7 +129,9 @@ section {
     margin: 8px 0px 30px 0px;
 }
 
-/* Buttons */
+/* =============
+    BUTTONS 
+================*/
 
 .btn-general {
     font-family: "Raleway", sans-serif;
@@ -152,14 +158,16 @@ section {
 }
 
 .btn-home:hover,
-btn-home:focus {
+.btn-home:focus {
     color: black;
     font-weight: 700;
     background-color: #f4c613;
     border: 1px solid #f4c613;
 }
 
-/* Arrow */
+/* =============
+    ARROWS 
+================*/
 
 #arrow-down {
     position: absolute;
@@ -177,4 +185,120 @@ btn-home:focus {
 #arrow-down:hover,
 #arrow-down:focus {
     color: #f4c613;
+}
+
+/* ==================
+    GENERIC BOXES 
+=====================*/
+
+.content-box-md {
+    padding: 100px 0;
+}
+
+.content-box-lg {
+    padding: 120px 0;
+}
+
+.vertical-heading h5 {
+    position: relative;
+    top: 68px;
+    left: -63px;
+    color: #f4c613;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 33;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+/* ================
+    About 01
+===================*/
+
+.about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+}
+
+/* ================
+    About 02
+===================*/
+
+#about-02 {
+    background: #f4f4f4;
+}
+
+.about-item {
+    background-color: white;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.about-item i {
+    font-size: 32px;
+    margin: 0;
+}
+
+.about-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-item hr {
+    height: 3px;
+    background-color: #f4c613;
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item p {
+    margin-top: 20px;
+}
+
+.about-item:hover {
+    background-color: #f4c613;
+}
+
+.about-item:hover i {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transition: translateY 0.5s;
+    -webkit-transition: translateY 0.5s;
+    -moz-transition: translateY 0.5s;
+    -ms-transition: translateY 0.5s;
+    -o-transition: translateY 0.5s;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+    color: white;
 }
