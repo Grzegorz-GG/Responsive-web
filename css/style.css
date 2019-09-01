@@ -458,6 +458,116 @@ Progress - skills
 /*================
       Work
 ==================*/
+
+#work .vertical-heading {
+    margin-bottom: 50px;
+} 
+
  #work .vertical-heading h5 {
    left: -83px;
  }
+
+#portfolio .row [class*="col-"] {
+    padding: 0;
+ }
+
+ #isotope-filters {
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+ }
+
+ #isotope-filters button {
+     font-family: "Raleway",sans-serif;
+     font-size: 12px;
+     font-weight: 700;
+     text-transform: uppercase;
+     background: transparent;
+     box-shadow: none;
+     padding-right: 30px;
+ }
+
+ #isotope-filters button span {
+     display: block;
+     padding-bottom:  5px;
+ }
+
+ #isotope-filters button.active span {
+     color: #f4c613;
+     border-bottom: 3px solid #f4c613;
+ }
+
+ .portfolio-item {
+     position: relative;
+     overflow: hidden;
+ }
+
+ .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+}
+
+ .portfolio-item:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.portfolio-item-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+}
+
+.portfolio-item-details {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.portfolio-item-details h3 {
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.portfolio-item-details span {
+    display: inline-block;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 30px;
+    height: 10px;
+    margin: 11px auto 5px auto;
+}
+
+.portfolio-item-details p {
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-item-overlay:hover {
+    opacity: 1;
+}

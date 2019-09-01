@@ -21,12 +21,34 @@ $('document').ready(function() {
 });
 
 //Progress bar
-
 $(function () {
         $(".progress-bar").each(function () {
             $(this).animate({
                 width: $(this).attr("aria-valuenow") + "%"
             }, 2000);
         });
+});
+
+//Portfolio 
+$(window).on('load', function() {
+    let $plugin = $('#plugin-container').isotope();
+
+    $('#isotope-filters').on('click', 'button', function() {
+        let filterValue = $(this).attr('data-filter');
+        $plugin.isotope({filter: filterValue});
+
+        $('#isotope-filters').find('.active').removeClass('active');
+        $(this).addClass('active');
     });
+});
+
+$('document').ready(function() {
+    $('#plugin-container').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+});
 
