@@ -421,3 +421,36 @@ Progress - skills
     display: inline-block;
     line-height: 25px;
 }
+
+
+/*==================
+   Picture section - 
+   CEO statement
+====================*/
+
+#statement {
+    background-image: url("../img/tech/tech-quote.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#statement .content-box-lg {
+    background: rgb(0, 0, 0, 0.35);
+}
+
+#ceo-statement h2 {
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+#ceo-statement p {
+    color: #f4c613;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: right;
+}
