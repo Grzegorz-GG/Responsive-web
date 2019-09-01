@@ -217,10 +217,10 @@ section {
 }
 
 .vertical-heading h2 {
-    margin: 0 0 0 33;
+    margin: 0 0 0 0;
     font-size: 42px;
     font-weight: 100;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 /* ================
@@ -306,8 +306,8 @@ section {
     min-height: 160px;
 }
 
-#team-left h2 {
-    margin-left: 10px;
+#team-left h5 {
+    left: -73px
 }
 
 .team-member {
@@ -454,3 +454,10 @@ Progress - skills
     margin-top: 8px;
     text-align: right;
 }
+
+/*================
+      Work
+==================*/
+ #work .vertical-heading h5 {
+   left: -83px;
+ }
