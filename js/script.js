@@ -6,9 +6,9 @@ $(window).on('load', function() {
     $('#preloader').delay(400).fadeOut('slow');
 });
 
-//Carousel
+//Team
 $('document').ready(function() {
-    $('.owl-carousel').owlCarousel({
+    $('#team-members.owl-carousel').owlCarousel({
         items: 2,
         autoplay: true,
         smartSpeed: 700,
@@ -49,6 +49,19 @@ $('document').ready(function() {
         gallery: {
             enabled: true
         }
+    });
+});
+
+//Testimonials
+$('document').ready(function() {
+    $('#testimonials-slider.owl-carousel').owlCarousel({
+        items: 1,
+        autoplay: false,
+        smartSpeed: 700,
+        loop: true,
+        nav:true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
 });
 
