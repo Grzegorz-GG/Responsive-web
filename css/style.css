@@ -631,6 +631,15 @@ Progress - skills
 .author-name-des p {
     margin: 0;
 }
+
 #testimonials .vertical-heading h5 {
     left: -73px;
+}
+
+/*================
+      Stats
+=================*/
+
+#stats .vertical-heading h5 {
+    left: -83px;
 }
