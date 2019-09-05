@@ -714,3 +714,47 @@ Progress - skills
     -ms-transform: translateY(-15px);
     -o-transform: translateY(-15px);
 }
+
+
+/* =========================================
+                Contact
+============================================ */
+
+
+#contact-left .vertical-heading h5 {
+    left: -70px;
+}
+
+#contact-left p {
+    margin: 25px 0 20px 0;
+}
+
+ul.office-details {
+    
+    list-style: none;
+    padding: 0;
+}
+
+ul.office-details li {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 12px;
+   display: flex;
+}
+
+ul.office-details li i {
+    font-size: 20px;
+    width: 45px;
+}
+
+.office {
+    margin-bottom: 30px;
+}
+
+/* =========================================
+                Map
+============================================ */
+
+#map {
+    height: 600px;
+    
+}

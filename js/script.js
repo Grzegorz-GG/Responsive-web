@@ -73,3 +73,26 @@ $(function () {
         time: 2500,
     });
 });
+
+//Map 
+$(window).on('load', function() {
+
+        let address = {lat: 44.7, lng: -70};
+        let map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 6, 
+            center: address
+        });
+        let marker = new google.maps.Marker({
+            position: address, 
+            map: map,
+            title: "Click to see details"
+        });
+      
+        let infowindow = new google.maps.InfoWindow({
+            content: "This is my address: 524 Sheffield Str."
+        });
+
+        marker.addListener('click', function() {
+            infowindow.open(map,marker);
+        });
+});
