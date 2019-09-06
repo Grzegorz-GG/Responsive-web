@@ -96,3 +96,32 @@ $(window).on('load', function() {
             infowindow.open(map,marker);
         });
 });
+
+//Header
+$(function() {
+
+    showOrHide();
+    $(window).scroll(function () { 
+        showOrHide();
+    });
+});
+
+function showOrHide() {
+    if($(window).scrollTop() > 100) {
+        $("nav").addClass("white-nav-top");
+    } else {
+        $("nav").removeClass("white-nav-top");
+    }
+}
+
+//Smoothly scrolling
+$(function() {
+    $("a.smooth").click(function (e) { 
+        e.preventDefault();
+        let sectionID = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(sectionID).offset().top -64            
+        }, 1000);  
+    });
+});
+

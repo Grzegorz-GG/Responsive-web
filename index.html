@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
     <!--Preloader-->
     <div id="preloader">
         <div id="status">&nbsp;</div>
@@ -42,7 +42,7 @@
             <div class="container-fluid">
                 <div class="site-nav-wrapper">
                     <div class="navbar-header">
-                            <a class="navbar-brand" href="#home">
+                            <a class="navbar-brand smooth" href="#home">
                                 <h5>Creative<strong> Web Development</strong></h5>
                             </a>
                     </div>
@@ -50,11 +50,11 @@
                     <div class="container">
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav pull-right">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#team">Team</a></li>
-                                <li><a href="#work">Work</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a class="smooth" href="#home">Home</a></li>
+                                <li><a class="smooth" href="#about">About</a></li>
+                                <li><a class="smooth" href="#team">Team</a></li>
+                                <li><a class="smooth" href="#work">Work</a></li>
+                                <li><a class="smooth" href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -93,14 +93,14 @@
                 </div>
 
                 <div id="home-btn">
-                    <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Start Now</a>
+                    <a class="btn btn-general btn-home smooth" href="#about" title="Start Now" role="button">Start Now</a>
                 </div>
             </div>
 
         </div>
 
         <!--Arrow-->
-        <a href="#about" id="arrow-down">
+        <a href="#about" id="arrow-down" class="smooth">
             <i class="fa fa-angle-down"></i>
         </a>
     </section>
