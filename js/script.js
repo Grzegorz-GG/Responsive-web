@@ -15,7 +15,15 @@ $('document').ready(function () {
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 2
+            }
+        }
     });
 });
 
@@ -82,6 +90,7 @@ $(window).on('load', function() {
             zoom: 6, 
             center: address
         });
+
         let marker = new google.maps.Marker({
             position: address, 
             map: map,
@@ -94,6 +103,12 @@ $(window).on('load', function() {
 
         marker.addListener('click', function() {
             infowindow.open(map,marker);
+        });
+
+        google.maps.event.addDomListener(window, 'resize', function() {
+            let center = map.getCenter();
+            google.maps.event.trigger(map, 'resize');
+            map.setCenter(center);
         });
 });
 
