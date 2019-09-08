@@ -730,7 +730,7 @@ Progress - skills
 }
 
 ul.office-details {
-    
+
     list-style: none;
     padding: 0;
 }
@@ -738,7 +738,7 @@ ul.office-details {
 ul.office-details li {
     font-family: "Open Sans", sans-serif;
     margin-top: 12px;
-   display: flex;
+    display: flex;
 }
 
 ul.office-details li i {
@@ -756,7 +756,7 @@ ul.office-details li i {
 
 #map {
     height: 600px;
-    
+
 }
 
 /* =========================================
@@ -805,7 +805,8 @@ footer p {
     margin: 10px;
     color: #f4c613;
     border: 1px solid #f4c613;
-    border-radius: 35%;;
+    border-radius: 35%;
+    ;
     -webkit-border-radius: 50%;
     -moz-border-radius: 35%;
     -ms-border-radius: 35%;
@@ -821,12 +822,12 @@ ul.navbar-nav li a {
     letter-spacing: 1px;
 }
 
-ul.navbar-nav > li > a:hover {
+ul.navbar-nav>li>a:hover {
     background: none;
     color: #f4c613;
 }
 
-ul.navbar-nav > li > a:focus {
+ul.navbar-nav>li>a:focus {
     background: none;
 }
 
@@ -843,11 +844,11 @@ ul.navbar-nav > li > a:focus {
     z-index: 2;
 }
 
-.white-nav-top ul.navbar-nav > li > a {
+.white-nav-top ul.navbar-nav>li>a {
     color: black;
 }
 
-.white-nav-top ul.navbar-nav > li > a:hover {
+.white-nav-top ul.navbar-nav>li>a:hover {
     color: #f4c613;
 }
 
@@ -855,6 +856,14 @@ ul.navbar-nav > li > a:focus {
     color: black;
 }
 
-.white-nav-top ul.navbar-nav > li.active > a {
+.white-nav-top ul.navbar-nav>li.active>a {
     color: #f4c613;
+}
+
+#work {
+    padding-bottom: 0;
+}
+
+#testimonials .vertical-heading {
+    padding-top: 10px;
 }

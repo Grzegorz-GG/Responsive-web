@@ -140,3 +140,18 @@ $(function() {
     });
 });
 
+//Mobile menu
+$(function() {
+    $("#mobile-nav-open-btn").click(function (e) { 
+        e.preventDefault();
+        $("#mobile-nav").css("height", "100%");
+    });
+
+    $("#mobile-nav-close-btn, #mobile-nav a").click(function (e) { 
+        e.preventDefault();
+        $("#mobile-nav").css("height", "0%");
+    });
+
+
+});
+
